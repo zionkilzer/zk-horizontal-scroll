@@ -1,5 +1,5 @@
 /**
- * Squarespace Horizontal Scroll - JavaScript
+ * zionkilzer/zk-horizontal-scroll - JavaScript
  * Version: 1.0.0
  * 
  * Add this to: Settings → Advanced → Code Injection → FOOTER
