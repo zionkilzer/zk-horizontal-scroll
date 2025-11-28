@@ -1,6 +1,6 @@
 # Squarespace Horizontal Scroll
 
-A lightweight, no-dependency solution for creating horizontal scrolling sections in Squarespace. Works like SquareKicker - scroll down vertically to move sections horizontally.
+A lightweight, no-dependency solution for creating horizontal scrolling sections in Squarespace. Scroll down vertically to move sections horizontally.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
