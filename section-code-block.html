@@ -1,0 +1,45 @@
+/**
+ * Section Code Block Template
+ * 
+ * Add this code block to the section where you want 
+ * horizontal scrolling to begin in Squarespace.
+ * 
+ * This section + the sections below it will scroll horizontally.
+ */
+
+<script>
+(function() {
+  
+  // ========================================
+  // SETTINGS - CUSTOMIZE THESE
+  // ========================================
+  
+  const settings = {
+    sectionCount: 3,        // How many sections to include (including this one)
+    sectionWidth: 100,      // Width: 100, 90, 80, 70, 60, 50 (% of viewport)
+    scrollSpeed: 1,         // Speed multiplier (1 = normal, 1.5 = faster, 0.7 = slower)
+    disableOnMobile: true   // Stack vertically on mobile? (true/false)
+  };
+  
+  // ========================================
+  // INITIALIZATION - DON'T EDIT BELOW
+  // ========================================
+  
+  const codeBlock = document.currentScript.parentElement;
+  const startSection = codeBlock.closest('section[data-section-id], .page-section');
+  
+  if (startSection) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        window.initHorizontalScroll(startSection, settings);
+      });
+    } else {
+      window.initHorizontalScroll(startSection, settings);
+    }
+    
+    // Hide this code block
+    codeBlock.style.display = 'none';
+  }
+  
+})();
+</script>
