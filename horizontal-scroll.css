@@ -6,79 +6,53 @@
  * Wrap in <style> tags
  */
 
-/* ========================================
-   HORIZONTAL SCROLL TRACK
-   ======================================== */
-
+<style>
 .horizontal-scroll-track {
   position: relative;
-  height: 100vh; /* Calculated dynamically by JavaScript */
+  height: 300vh; /* JS calculates this */
 }
 
-/* Sticky wrapper that pins during scroll */
 .horizontal-scroll-wrapper {
   position: sticky;
   top: 0;
   height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: stretch;
 }
 
-/* Container that translates horizontally */
 .horizontal-scroll-sections {
   display: flex;
   flex-direction: row;
   height: 100%;
   will-change: transform;
-  transition: transform 0.1s ease-out;
 }
 
-/* Individual sections */
 .horizontal-scroll-section {
   flex: 0 0 auto;
   height: 100%;
   width: 100vw;
 }
 
-/* ========================================
-   WIDTH VARIANTS
-   ======================================== */
-
-.horizontal-scroll-section.width-100 { width: 100vw; }
-.horizontal-scroll-section.width-90 { width: 90vw; }
 .horizontal-scroll-section.width-80 { width: 80vw; }
-.horizontal-scroll-section.width-70 { width: 70vw; }
 .horizontal-scroll-section.width-60 { width: 60vw; }
-.horizontal-scroll-section.width-50 { width: 50vw; }
-
-/* ========================================
-   MOBILE RESPONSIVE
-   ======================================== */
 
 @media (max-width: 768px) {
-  /* Reset track height */
   .horizontal-scroll-track.disable-mobile {
     height: auto !important;
   }
-  
-  /* Remove sticky positioning */
   .horizontal-scroll-wrapper.disable-mobile {
     position: relative;
     height: auto;
     display: block;
   }
-  
-  /* Stack sections vertically */
   .horizontal-scroll-sections.disable-mobile {
     display: block;
     transform: none !important;
   }
-  
-  /* Full width sections */
   .horizontal-scroll-section.disable-mobile {
     width: 100%;
     height: auto;
     min-height: 100vh;
   }
 }
+</style>
