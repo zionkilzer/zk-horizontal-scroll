@@ -1,9 +1,9 @@
+<style>
 /**
  * zk-horizontal-scroll - CSS
  * Version: 1.0.0
  */
 
-<style>
 .horizontal-scroll-track {
   position: relative;
   height: 300vh; /* JS calculates this */
